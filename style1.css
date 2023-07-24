@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+header{
+    background-image: url(/project/img/background3.jpeg);
+    /* background-color: #000000; */
+  height: 3150px;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 15px;
+}
+
+ul li{
+    display: inline-block;
+
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+    border-radius: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: black;
+}
+
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 75px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.loader {
+    position: fixed;
+    top:0;
+
+    left: 0;
+    
+   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+   justify-content: center;
+   align-items: center;
+    place-content:center;
+    justify-items: center;
+    transition: opacity 0.75s, visibility 0.75s;
+
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    margin-top: 2px;
+    margin-left: 2px;
+    content: "cheesy wheels";
+    font-family: fantasy;
+    place-content: center;
+    width :75px;
+    height: 75px;
+    border: 15px solid #fff;
+    border-top-color: #000000;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+#menu {
+    padding: 25px 0 25px 0;
+
+}
+#section {
+    color: #fff;
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: verdana;
+}
+#menu_row {
+    display: flex;
+    padding: 0 100px 0 100px;
+
+}
+#menu_col{
+    box-shadow: 3px 3px 3px #bbb;
+    border: 2px solid #bbb;
+    border-radius: 3%;
+    background-color: rgb(230, 230, 226);
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+#menu_col h2{
+    font-size: 45px;
+    color: #020202;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+    
+}
+#image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid goldenrod;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   object-fit: cover;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+

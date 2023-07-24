@@ -1,0 +1,139 @@
+/* .preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gold-crayola);
+    z-index: 10;
+    display: grid;
+    place-content:center;
+    justify-items: center;
+    transition: var(--transition-1);
+
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+header{
+    background-image: url(../project/projectimg/cheesebackground.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 15px;
+}
+
+ul li{
+    display: inline-block;
+
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+    border-radius: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: black;
+}
+
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 75px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #100909;
+    font-size: 70px;
+    font-optical-sizing: auto;
+    font-family:fantasy;
+}
+
+.title p{
+    color: #100909;
+    font-size: 30px;
+    font-family: monospace;
+}
+.loader {
+    position: fixed;
+    top:0;
+
+    left: 0;
+    
+   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+   justify-content: center;
+   align-items: center;
+    place-content:center;
+    justify-items: center;
+    transition: opacity 0.75s, visibility 0.75s;
+
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    margin-top: 2px;
+    margin-left: 2px;
+    content: "cheesy wheels";
+    font-family: fantasy;
+    place-content: center;
+    width :75px;
+    height: 75px;
+    border: 15px solid #fff;
+    border-top-color: #000000;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
